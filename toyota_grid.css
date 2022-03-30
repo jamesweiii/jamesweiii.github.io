@@ -4,29 +4,22 @@
 }
 .information{
     width: 960px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 75px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(30,40px);
+    grid-template-rows: repeat(26,40px);
     margin: auto;
 
 }
 .topic_left .transparent_box{
     background-color: #eeeeee;
-    width: 430px;
-    height: 290px;
-    position: relative;
     z-index: -1;
-    margin-right: -59%;
-    margin-bottom: -20%;
+    grid-area: 2 / 15 / 9 / 26;
 }
-.txt{
+.topic_left .txt{
     width: 350px;
     position: absolute;
     z-index: 5;
-    margin-top: -22px;
-    margin-left: -600px;
+    grid-area: 2 / 2 ;
 }
 .title{
     color: #fff;
@@ -56,26 +49,20 @@
     font-weight: bold;
 }
 .topic_left .pic{
-    margin-left: 20%;
+    grid-area: 4/7;
 }
 .topic_left .yt{
-    position: relative;
-    z-index: 2;
-    left: 430px;
-    bottom: 235px;
+    grid-area: 10/24;
 }
 .topic_left .innovation{
-    display: flex;
     flex-direction: column;
     background-color: #ddd;
     align-items: flex-start;
-    width: 680px;
     line-height: 1;
     padding: 0 20px;
     font-size: 16px;
     position: relative;
-    bottom: 75px;
-    right: 55px;
+    grid-area: 14/3/23/21;
 }
 .innovation_title{
     padding: 20px 0;
@@ -87,6 +74,7 @@
     font-size: 20px;
 }
 .innovation h3{
+    width: 140px;
     background-color: black;
     color: #fff;
     padding: 5px 15px;
@@ -98,47 +86,40 @@
 
 .topic_right .transparent_box{
     background-color: #eeeeee;
-    width: 518px;
-    height: 431px;
-    position: relative;
     z-index: -1;
-    margin-left: 10%;
-    margin-bottom: -35%;
-    bottom: -35px;
+    grid-area: 3/8/14/21 ;
+
 }
 .topic_right .txt{
-    width: 350px;
-    position: absolute;
-    margin-left: 610px;
+    display: grid;
     z-index: 5;
-    margin-top: -25px;
+    grid-area: 2/15/10/24;
 }
 .topic_right .title{
     color: #fff;
     background-color: red;
     text-align: right;
+    
 }
 .topic_right .pic{
-    margin-left: -20%;
+    grid-area: 5/2/15/18;
 }
 .topic_right .yt{
-    position: relative;
     z-index: 2;
-    right: 430px;
-    bottom: 240px;
+    grid-area: 10/1;
 }
 .topic_right .innovation{
     display: flex;
     flex-direction: column;
+    
     background-color: #ddd;
     align-items: flex-start;
-    width: 682px;
-    line-height: 1;
     padding: 0 20px;
     font-size: 16px;
-    position: relative;
-    bottom: 70px;
-    left: 120px;
+    grid-area: 15/7/21/24;
+}
+.topic_right .innovation h3{
+    width: 150px;
 }
 .forty_six_things{
     padding: 40px;
