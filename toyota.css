@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.information{
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    padding: 20px;
+    margin: auto;
+
+}
+.topic_left .transparent_box{
+    background-color: #eeeeee;
+    width: 430px;
+    height: 290px;
+    position: relative;
+    z-index: -1;
+    margin-right: -59%;
+    margin-bottom: -20%;
+}
+.txt{
+    width: 350px;
+    position: absolute;
+    z-index: 5;
+    margin-top: -20px;
+    margin-left: -600px;
+}
+.title{
+    color: #fff;
+    background-color: red;
+    font-size: 40px;
+}
+.title div{
+    display:inline ;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    font-size:120px;
+    font-weight: 400;
+}
+.title h1{
+    display: inline;
+    font-size: 45px;
+}
+.detailed_report{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+}
+.detailed_report h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.topic_left .pic{
+    margin-left: 20%;
+}
+.topic_left .yt{
+    position: relative;
+    z-index: 2;
+    left: 430px;
+    bottom: 235px;
+}
+.topic_left .innovation{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    align-items: flex-start;
+    width: 680px;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    position: relative;
+    bottom: 75px;
+    right: 55px;
+}
+.innovation_title{
+    padding: 20px 0;
+    width: 100%;
+}
+.innovation h2{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.innovation h3{
+    background-color: black;
+    color: #fff;
+    padding: 5px 15px;
+}
+.innovation p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.topic_right .transparent_box{
+    background-color: #eeeeee;
+    width: 518px;
+    height: 431px;
+    position: relative;
+    z-index: -1;
+    margin-left: 10%;
+    margin-bottom: -35%;
+    bottom: -35px;
+}
+.topic_right .txt{
+    width: 350px;
+    position: absolute;
+    margin-left: 610px;
+    z-index: 5;
+    margin-top: -43px;
+}
+.topic_right .title{
+    color: #fff;
+    background-color: red;
+    text-align: right;
+}
+.topic_right .pic{
+    margin-left: -20%;
+}
+.topic_right .yt{
+    position: relative;
+    z-index: 2;
+    right: 430px;
+    bottom: 240px;
+}
+.topic_right .innovation{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    align-items: flex-start;
+    width: 682px;
+    line-height: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    position: relative;
+    bottom: 70px;
+    left: 120px;
+}
+.forty_six_things{
+    padding: 40px;
+    width: 960px;
+    height: 590px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.forty_six_things p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 960px;
+    height: 668px;
+    color: black;
+    margin: auto;
+    font-size: 180px;
+    font-weight: 900;
+    margin-top: -.22em;
+}
+.videos{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    mix-blend-mode:screen;
+
+}
+.more_btn{
+    width: 255px;
+    height: 70px;
+    background-color: black;
+    color: aqua;
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+}
+.btn{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    right: 125px;
+    bottom: 45px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
