@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal_introduction</title>
+    <style>
+        .pic>img{
+            width: 100%;
+            border: 2px solid red;
+        }
+        .intro{
+            margin: 20px;
+            text-align: center;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="pic">
+            <img src="https://megapx-assets.dcard.tw/images/1763469c-f891-4a24-9836-00e9e6e76e4c/full.jpeg" alt="">
+        </div>
+        <div class="intro">
+            <div id="name">name：</div>
+            <div id="email">email：
+            </div>
+            <div id="school">school：</div>
+            <div id="hoobies">hoobies：</div>
+        </div>
+        <script>
+            
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let school = document.getElementById("school");
+            let interest = document.getElementById("hoobies");
+
+            name.innerText += "james wei";
+            email.innerText += "a1995james@gmail.com";
+            school.innerText += "Chung Hua University";
+            interest.innerText += "investment";
+            document.write("<br>");
+            const imageArray = [
+                "http://4.bp.blogspot.com/-UFYvy9XyhmA/U3Mg6Jx6eII/AAAAAAAACTM/iEWOjHW1Dz0/s1600/01.gif",
+                "https://memeprod.ap-south-1.linodeobjects.com/user-gif-post/1633499748617.gif",
+                "https://memeprod.ap-south-1.linodeobjects.com/user-gif-post/1646061550848.gif",
+            ];
+            imageArray.forEach((url, index) => {
+                document.write(`<img src=${url}>`);
+            });
+    
+        </script>
+        <br>
+    </section>
+</body>
+</html>
