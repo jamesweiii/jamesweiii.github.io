@@ -31,7 +31,7 @@ window.onload = function () {
         theadTR.append(td);
     });
     thead.append(theadTR);
-    marketingShare.data.forEach(item => {
+    marketingShare.data.forEach(function (item) {
         let tbodyTR = document.createElement('tr');
         let values = Object.values(item);
         values.forEach(function(i){
@@ -43,13 +43,8 @@ window.onload = function () {
     });
     table.append(thead, tbody);
     body.append(table);
-    marketingShare.data.forEach(company => {
+    marketingShare.data.forEach(function(company){
         companins.push(company.Name);
         Data.push(company.Ratio);
-    });
-
-    drawPieChart(companins, Data);
-    marketingShare.titles.forEach(item => {
-
     });
 }
