@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        varegrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+        }
+
+
+        .text_size {
+            font-size: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-12 pt-4">
+                <h2 class="text-center text-wrap">猜數字(幾A幾B)</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-2">
+                <button type="button" class="btn btn-info btn-lg" id="btn_start">開始遊戲</button>
+
+                <button type="button" class="btn btn-danger btn-lg" id="btn_renew" disabled="">放棄重來</button>
+                <button type="button" class="btn btn-success btn-lg" id="btn_answer" disabled="">看答案</button>
+            </div>
+        </div>
+        <br>
+        <ul class="list-group mt-2" id="show_answer">
+        </ul>
+
+        <input class="form-control" type="text" placeholder="輸入四位數字(四個數不重複)" id="input_answer" disabled="">
+        <button type="button" class="btn btn-primary mt-2" id="btn_checkanswer" disabled="">猜猜看~</button>
+        <br>
+
+
+
+    </div>
+    <script src="./1a2b.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        varegrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    
+    
+</body>
+
+</html>
