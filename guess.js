@@ -47,7 +47,7 @@ function check() {
     }
     else if (result == input) {
         msg = '恭喜你猜對了! 答案是' + result + '。遊戲結束! 2秒後重新開始';
-        setTimeout(() => { init(); }, 2000);
+        setTimeout(() => { window.location.reload(); }, 2000);
     }
     
     console.log(big + '/' + small + '/' + input);
