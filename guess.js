@@ -23,7 +23,7 @@ function init() {
     
 }
 function Reset() {
-    init();
+    window.location.reload()
     
 };
 
