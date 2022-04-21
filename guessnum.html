@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guessing_num</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+
+
+    <div class="btn">
+        <button id="reset" onclick=Reset()>RESET</button>
+    </div>
+
+    <div class="showup">
+        <p id="msg">
+            <p>目前範圍:
+                <span id='small'></span>
+                ~
+                <span id='big'></span>
+            </p>
+        </p>
+    </div>
+        
+    <div class="calculator-grid">
+        
+    
+        <div class="output" >
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand" id='num'></div>
+        </div>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-all-clear class="span-two">x</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two" onclick='check()'>v</button>
+
+    </div>
+
+<script src="./guess.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
