@@ -694,13 +694,12 @@ nav .fa-bars{
 }
 @media only screen and (max-width: 1128px){
     
-    .all
-    {
+
+    
+    .all{
+        margin: 50px 0 10px;
+        text-align: center;
         display: block;
-    }
-    .menu h3 
-    {
-        margin-left: 60px;
     }
     .menu ul
     {
@@ -708,11 +707,12 @@ nav .fa-bars{
         flex-wrap: wrap;
         padding-bottom: 20px;
         border-bottom: 1px solid gainsboro;
-        
     }
     .menu li
     {
-        margin: 0 20px;
+        display: block;
+        margin: 10px;
+        
     }
 }
     
