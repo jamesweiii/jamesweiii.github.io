@@ -16,8 +16,9 @@ nav{
     justify-content: space-between;
     padding: 20px 7%;
 }
+
 .logo{
-    width: 140px;
+    width: 130px;
     cursor: pointer;
 }
 .nav-links li{
@@ -62,6 +63,7 @@ nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .search-bar form input{
     display: block;
@@ -82,8 +84,12 @@ nav{
     width: 15px;
     margin-top: 7px;
 }
-.Location-input{
-    flex: 1;
+
+.search-bar form select{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: justify;
 }
 .search-bar form label{
     font-weight: 600;
@@ -98,7 +104,7 @@ nav{
 }
 .exclusives{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 30px;
 }
 .exclusives div img{
@@ -257,10 +263,10 @@ nav .fa-bars{
 /* --------手機板 */
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:992px){
     .logo{
         position: fixed;
-        top: 4%;
+        top: 3%;
         left: 7%;
     }
     nav{
@@ -314,6 +320,13 @@ nav .fa-bars{
     .search-bar form{
         display: block;
     }
+    .search-bar form select{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
     .search-bar form input{
         border-bottom: 1px solid #ddd;
         width: 100%;
@@ -359,6 +372,10 @@ nav .fa-bars{
 .navbar-white{
     background: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 .navbar-white .nav-links li a{
     color: #000;
@@ -374,7 +391,7 @@ nav .fa-bars{
     background: #ff5361;
 }
 .list-container{
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -493,7 +510,7 @@ nav .fa-bars{
 
 
 /* ------------ */
-@media screen and (max-width:700px){
+@media screen and (max-width:992px){
     .list-container{
         margin-top: 150px;
     }
@@ -524,6 +541,8 @@ nav .fa-bars{
 /* ------house-details pages ------ */
 .house-details{
     padding: 0 12%;
+    margin-top: 150px;
+    
 }
 .house-title{
     margin-top: 50px;
@@ -606,7 +625,12 @@ nav .fa-bars{
     font-size: 16px;
 }
 .guest-field{
-    flex: 1;
+    flex:1;
+}
+.guest-field select{
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #ccc;
 }
 .details-list{
     list-style: none;
@@ -635,92 +659,60 @@ nav .fa-bars{
     margin-bottom: 50px;
     line-height: 1.5;
 }
-.map{
-    margin: 50px 0;
-}
-.map iframe{
+.all{
+    padding-top: 100px;
     width: 100%;
-    margin-bottom: 30px;
-}
-.map h3{
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-.map b{
-    display: block;
-    margin-bottom: 16px;
-}
-.host{
     display: flex;
-    align-items: center;
+    margin: 30px 50px 20px;
+    justify-content: space-between;
 }
-.host img{
-    width: 80px;
-    border-radius: 50%;
-    margin-right: 30px;
+.menu{
+    width: 210px;
+    margin: 15px;
+    text-align: center;
 }
-.host h2{
-    margin-bottom: 10px;
-    font-weight: 500;
+.menu li
+{
+    list-style-type: none;
 }
-.host i{
-    color: #ff5361;
+
+.menu h3{
+    margin-bottom: 20px;
+    font-size: 1.6vh;
 }
-.contact-host{
-    display: inline-block;
-    margin: 40px 0 40px 120px;
+.menu a{
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    color: gray;
     text-decoration: none;
-    color: #555;
-    padding: 15px 50px;
-    border: 1px solid #ff5361;
-    border-radius: 8px;
 }
-
-/* ------media for house-details page */
-
-@media screen and (max-width:700px) {
-    .house-details{
-        margin-top: 150px;
-    }
-    .row p{
-        margin-top: 10px;
-    }
-    .gallery{
-        grid-template-areas: 'first first' '. .' '. .';
-    }
-    .small-details h2{
-        font-size: 20px;
-        margin-top: 24px;
-    }
-    .small-details h4{
-        text-align: left;
-        margin: 10px 0;
-        font-size: 18px;
-    }
-    .check-form{
-        padding: 10px 30px;
-    }
-    .check-form div{
-        padding: 20px 0;
-        width: 100%;
-    }
-    .check-form input{
-        border-bottom: 1px solid #ccc;
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .check-form button{
-        font-size: 14px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        border-radius: 4px;
-    }
-    .host{
+.menu a:hover{
+    background: #ff352f;
+    color: #fff;
+    border-radius: 100px;
+}
+@media only screen and (max-width: 1128px){
+    
+    .all
+    {
         display: block;
-        line-height: 28px;
     }
-    .contact-host{
-        margin: 40px 0;
+    .menu h3 
+    {
+        margin-left: 60px;
+    }
+    .menu ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gainsboro;
+        
+    }
+    .menu li
+    {
+        margin: 0 20px;
     }
 }
+    

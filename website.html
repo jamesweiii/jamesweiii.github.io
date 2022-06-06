@@ -13,12 +13,11 @@
 <body>
     <div class="header">
         <nav id="navBar">
-            <img src="images/logo.png" class="logo" alt="">
-
+            <a href="website.html"><img src="images/Whoochu.png" class="logo" alt=""></a>
             <ul class="nav-links">
-                <li><a href="website.html" class="active">Popular Places</a></li>
+                <li><a href="website.html" class="active">Home Page</a></li>
+                <li><a href="a.html">Popular Package</a></li>
                 <li><a href="house.html">Travel Outside</a></li>
-                <li><a href="a.html">Online Package</a></li>
             </ul>
             <a href="#" class="register-btn">Register Now</a>
             <i class="fas fa-bars" onclick="togglebtn()"></i>
@@ -29,19 +28,37 @@
                 <form>
                     <div class="Location-input">
                         <label>Location</label>
-                        <input type="text" placeholder="Where are you going?">
+                        <div>
+                            <select>
+                                <option value="1"selected>Where are you going ?</option>
+                                <option value="2">Paris</option>
+                                <option value="3">Shanghai</option>
+                                <option value="4">London</option>
+                                <option value="5">France</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
-                        <label class="C-in">Check in</label>
-                        <input type="text" placeholder="Add Date">
+                        <label>Check in</label>
+                        <input type="datetime-local" id="checkin-time"
+                                name="checkin-time" value="">
                     </div>
                     <div>
-                        <label class="C-out">Check out</label>
-                        <input type="text" placeholder="Add Date">
+                        <label>Check out</label>
+                        <input type="datetime-local" id="checkout-time"
+                                name="checkout-time" value="">
                     </div>
                     <div>
-                        <label class="Guest">Guest</label>
-                        <input type="text" placeholder="Add Guest">
+                        <label>Guest</label>
+                        <div>
+                            <select>
+                                <option value="1"selected>Add Guest ?</option>
+                                <option value="2">1 person</option>
+                                <option value="3">2 person</option>
+                                <option value="4">3 person</option>
+                                <option value="5">4 person</option>
+                            </select>
+                        </div>
                     </div>
                     <button type="submit"><img src="images/search.png" alt=""></button>
                 </form>
@@ -49,12 +66,12 @@
         </div>
     </div>
     <div class="container">
-        <h2 class="sup-title">Exclusive</h2>
+        <h2 class="sup-title">Country</h2>
         <div class="exclusives">
             <div>
                 <img src="images/image-1.png" alt="">
                 <span>
-                    <h3>London</h3>
+                    <h3>United Kingdom</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
@@ -82,7 +99,7 @@
             <div>
                 <img src="images/image-5.png" alt="">
                 <span>
-                    <h3>Amsterdam</h3>
+                    <h3>Canada</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
@@ -96,28 +113,28 @@
             <div>
                 <img src="images/image-7.png" alt="">
                 <span>
-                    <h3>New York</h3>
+                    <h3>United States</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-8.png" alt="">
                 <span>
-                    <h3>Chicago</h3>
+                    <h3> Japan</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-9.png" alt="">
                 <span>
-                    <h3>San Francisco</h3>
+                    <h3>Germany</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
             <div>
                 <img src="images/image-10.png" alt="">
                 <span>
-                    <h3>Shanghai</h3>
+                    <h3>China</h3>
                     <p>Starts @ $250</p>
                 </span>
             </div>
@@ -169,6 +186,49 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium soluta saepe, harum maiores quibusdam sint ea distinctio cumque placeat assumenda, velit nesciunt praesentium minus quasi. Voluptas vel ratione reiciendis pariatur iusto, dolore fugiat quam, ducimus placeat dolorem cumque asperiores voluptatum sed laboriosam deleniti eveniet. Sapiente officiis nobis, soluta eius error eveniet eos quidem maxime vero magnam voluptates consequatur unde! Labore sequi maiores libero odit rem! Doloribus quidem ipsum quaerat unde tempore ab rerum nulla culpa illum animi? Quisquam, numquam quam? Deserunt molestiae, ea, a soluta esse sint reiciendis id iste totam magnam vel impedit molestias sapiente obcaecati repellendus, amet cumque nobis omnis pariatur quidem sequi dolores neque voluptas doloremque. Iusto rerum dolore beatae veritatis, voluptate soluta. Hic porro nam impedit dolorem debitis. Officiis necessitatibus maiores molestias magnam id. Culpa rem odit sequi, quasi quibusdam animi deserunt, distinctio ducimus doloremque, temporibus ipsa beatae natus quidem aliquid accusamus? Magnam deserunt fuga reiciendis.</p>
         </div>
 
+        <hr>
+        <footer class="all">
+            <span class="menu">
+                <h3>用戶支援</h3>
+                <ul>
+                    <li><a href="#">說明中心</a></li>
+                    <li><a href="#">AirCover</a></li>
+                    <li><a href="#">安全資訊</a></li>
+                    <li><a href="#">支援身心障礙人士</a></li>
+                    <li><a href="#">退訂選項</a></li>
+                    <li><a href="#">我們的新冠肺炎因應措施</a></li>
+                    <li><a href="#">回報社區問題</a></li>
+                </ul>
+            </span>
+            <span class="menu">
+                <h3>社區</h3>
+                <ul>
+                    <li><a href="#">Airbnb.org:救災住宿</a></li>
+                    <li><a href="#">支援阿富汗難民</a></li>
+                    <li><a href="#">消弭歧視</a></li>
+                </ul>
+            </span>
+            <span class="menu">
+                <h3>出租房源和舉辦體驗</h3>
+                <ul>
+                    <li><a href="#">開始出租／舉辦體驗</a></li>
+                    <li><a href="#">專為房東提供的 AirCover</a></li>
+                    <li><a href="#">瀏覽待客資源</a></li>
+                    <li><a href="#">前往我們的社區論壇</a></li>
+                    <li><a href="#">落實負責任出租和舉辦體驗的方法</a></li>
+                </ul>
+            </span>
+            <span class="menu">
+                <h3>關於</h3>
+                <ul>
+                    <li><a href="#">Airbnb 新聞中心</a></li>
+                    <li><a href="#">了解新功能</a></li>
+                    <li><a href="#">來自 Airbnb 創辦人的信</a></li>
+                    <li><a href="#">工作機會</a></li>
+                    <li><a href="#">投資人</a></li>
+                </ul>
+            </span>
+        </footer>
         <div class="footer">
             <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
@@ -178,14 +238,34 @@
             <hr>
             <p>Copyright © 2022, Easy Tutorials</p>
         </div>
+        
     </div>
 
-<script>
-    var navBar = document.getElementById("navBar");
+    <script>
+        var navBar = document.getElementById("navBar");
 
-    function togglebtn(){
-        navBar.classList.toggle("hidemenu")
-    }
-</script>
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+
+
+    </script>
+    <script language="javascript">
+        var Today=new Date();
+        var t2 = new Date();
+        t2.setHours(t2.getHours()+2);
+        var y = Today.getFullYear();
+        let m = String(Today.getMonth() + 1).padStart(2, '0');
+        let d = String(Today.getDate()).padStart(2, '0');
+        var h = Today.getHours();
+        var h1 = t2.getHours();
+        var min = Today.getMinutes();
+        var CheckInTime = y+"-"+m+"-"+d+"T"+h+":"+min;
+        var CheckOutTime = y+"-"+m+"-"+d+"T"+h1+":"+min;
+
+        document.querySelector('#checkin-time').setAttribute('value',CheckInTime)
+        document.querySelector('#checkout-time').setAttribute('value',CheckOutTime)
+
+    </script>
 </body>
 </html>

@@ -11,13 +11,14 @@
 </head>
 <body>
     <nav id="navBar" class="navbar-white">
-        <img src="images/logo-red.png" class="logo" alt="">
-
-        <ul class="nav-links">
-            <li><a href="website.html">Popular Places</a></li>
+        <a href="website.html">
+            <img src="images/whoochu.red.png" class="logo" alt="">
+        </a>
+        <ul class="nav-links ">
+            <li><a href="website.html">Home Page</a></li>
+            <li><a href="a.html" class="active">Popular Package</a></li>
             <li><a href="house.html">Travel Outside</a></li>
-            <li><a href="a.html" class="active">Online Package</a></li>
-        </ul>
+    </ul>
         <a href="#" class="register-btn">Register Now</a>
         <i class="fas fa-bars" onclick="togglebtn()"></i>
     </nav>
@@ -232,13 +233,32 @@
     </div>  
     
 
-<script>
-    var navBar = document.getElementById("navBar");
+    <script>
+        var navBar = document.getElementById("navBar");
 
-    function togglebtn(){
-        navBar.classList.toggle("hidemenu")
-    }
-</script>    
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+
+
+    </script>
+    <script language="javascript">
+        var Today=new Date();
+        var t2 = new Date();
+        t2.setHours(t2.getHours()+2);
+        var y = Today.getFullYear();
+        let m = String(Today.getMonth() + 1).padStart(2, '0');
+        let d = String(Today.getDate()).padStart(2, '0');
+        var h = Today.getHours();
+        var h1 = t2.getHours();
+        var min = Today.getMinutes();
+        var CheckInTime = y+"-"+m+"-"+d+"T"+h+":"+min;
+        var CheckOutTime = y+"-"+m+"-"+d+"T"+h1+":"+min;
+
+        document.querySelector('#checkin-time').setAttribute('value',CheckInTime)
+        document.querySelector('#checkout-time').setAttribute('value',CheckOutTime)
+
+    </script>  
 
 </body>
 </html>
