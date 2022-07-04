@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="website.html">
+            <img src="images/whoochu.red.png" class="logo" alt="">
+        </a>
+        <ul class="nav-links red-links">
+            <li><a href="website.html">首頁</a></li>
+            <li><a href="a.html">房屋清單</a></li>
+            <li><a href="house.html">熱門房型</a></li>
+        </ul>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn register-btn">
+                <i class="fas fa-bars" style="font-size: 20px;"></i>
+                <i class="fas fa-user-circle" style="font-size: 30px;"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">登入</a>
+                <a href="#home">註冊</a>
+                <a href="#home">出租房源</a>
+            </div>
+        </div>
+        <i class="fas fa-bars hidden-btn" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="container">
+        <form action="">
+
+            <div class="row">
+                <div class="house">
+                    <div class="house-img">
+                        <div class="gallery">
+                            <div class="gallery-img-1"><img src="images/house-1.png"></div>
+                            <div><img src="images/house-2.png"></div>
+                            <div><img src="images/house-3.png"></div>
+                            <div><img src="images/house-4.png"></div>
+                            <div><img src="images/house-5.png"></div>
+                        </div>
+                    </div>
+                    <div class="house-info">
+                        <p>陽印成他老家</p>
+                        <a href="house.html">
+                            <h3>單人套房內含對外窗</h3>
+                        </a>
+                        <p>1 床 / 1 廁所 / Wifi / 廚房</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house-price">
+                            <p>2 人</p>
+                            <h4>$ 100 <span>/ 天</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="myTrip">
+                        <div class="title">
+                            <h3>你的旅程 :　</h3>
+                            <div class="paymentinfo">
+                                <h4>日期 :</h4>
+                                <p>7月6日至13日</p>
+                                <h4>房客人數 :</h4>
+                                <p>一位房客 </p>
+                                <h4>價格詳情 :</h4>
+                                <p>$100.00 x 7晚
+                                    $700.00</p>
+                                <h4>服務費 :</h4>
+                                <p>$60.00</p>
+                                <h4>總價 (TWD) :</h4>
+                                <p>$760.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="billing-address">
+                            <h3 class="title">billing address</h3>
+
+                            <div class="inputBox">
+                                <span>full name :</span>
+                                <input type="text" placeholder="James Wei">
+                            </div>
+                            <div class="inputBox">
+                                <span>email :</span>
+                                <input type="email" placeholder="example@example.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>address :</span>
+                                <input type="text" placeholder="ooxx-oooxxx">
+                            </div>
+                            <div class="inputBox">
+                                <span>city :</span>
+                                <input type="text" placeholder="Hsinchu">
+                            </div>
+
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>state :</span>
+                                    <input type="text" placeholder="TW">
+                                </div>
+                                <div class="inputBox">
+                                    <span>zip code :</span>
+                                    <input type="text" placeholder="98036">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+
+                            <h3 class="title">payment</h3>
+
+                            <div class="inputBox">
+                                <span>cards accepted :</span>
+                                <img src="images/card_img.png" alt="">
+                            </div>
+                            <div class="inputBox">
+                                <span>name on card :</span>
+                                <input type="text" placeholder="MR. Right">
+                            </div>
+                            <div class="inputBox">
+                                <span>credit card number :</span>
+                                <input type="number" placeholder="1111-2222-3333-4444">
+                            </div>
+                            <div class="inputBox">
+                                <span>exp month :</span>
+                                <input type="text" placeholder="January">
+                            </div>
+
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>exp year :</span>
+                                    <input type="number" placeholder="2022">
+                                </div>
+                                <div class="inputBox">
+                                    <span>CVV :</span>
+                                    <input type="text" placeholder="124">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <a href="house.html" class="goback">上一步 . . .</a>
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+            
+            
+        </form>
+
+
+
+    </div>
+</body>
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+    }
+
+
+</script>
+<script language="javascript">
+
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+</script>
+
+</html>

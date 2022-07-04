@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            width: 80%;
+            display: flex;
+            margin: 30px 50px 20px;
+            justify-content: space-around;
+        }
+        .menu{
+            width: 210px;
+            margin: 15px;
+            
+        }
+        .menu li
+        {
+            list-style-type: none;
+        }
+
+        .menu h3{
+            margin-bottom: 20px;
+            margin-left: 40px;
+            font-size: 16px;
+        }
+        .menu a{
+            font-size: 15px;
+            line-height: 30px;
+            color: gray;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            background: #ff352f;
+            color: #fff;
+        }
+        @media only screen and (max-width: 1128px){
+            
+            .all
+            {
+                display: block;
+            }
+            .menu h3 
+            {
+                margin-left: 60px;
+            }
+            .menu ul
+            {
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+                border-bottom: 1px solid gainsboro;
+                
+            }
+            .menu li
+            {
+                margin: 0 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <footer class="all">
+        <span class="menu">
+            <h3>用戶支援</h3>
+            <ul>
+                <li><a href="#">說明中心</a></li>
+                <li><a href="#">AirCover</a></li>
+                <li><a href="#">安全資訊</a></li>
+                <li><a href="#">支援身心障礙人士</a></li>
+                <li><a href="#">退訂選項</a></li>
+                <li><a href="#">我們的新冠肺炎因應措施</a></li>
+                <li><a href="#">回報社區問題</a></li>
+            </ul>
+        </span>
+        <span class="menu">
+            <h3>社區</h3>
+            <ul>
+                <li><a href="#">Airbnb.org:救災住宿</a></li>
+                <li><a href="#">支援阿富汗難民</a></li>
+                <li><a href="#">消弭歧視</a></li>
+            </ul>
+        </span>
+        <span class="menu">
+            <h3>出租房源和舉辦體驗</h3>
+            <ul>
+                <li><a href="#">開始出租／舉辦體驗</a></li>
+                <li><a href="#">專為房東提供的 AirCover</a></li>
+                <li><a href="#">瀏覽待客資源</a></li>
+                <li><a href="#">前往我們的社區論壇</a></li>
+                <li><a href="#">落實負責任出租和舉辦體驗的方法</a></li>
+            </ul>
+        </span>
+        <span class="menu">
+            <h3>關於</h3>
+            <ul>
+                <li><a href="#">Airbnb 新聞中心</a></li>
+                <li><a href="#">了解新功能</a></li>
+                <li><a href="#">來自 Airbnb 創辦人的信</a></li>
+                <li><a href="#">工作機會</a></li>
+                <li><a href="#">投資人</a></li>
+            </ul>
+        </span>
+    </footer>
+</div>
+</body>
+</html>
