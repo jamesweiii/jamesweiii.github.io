@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+
+        }
+        .swiper{
+            width: 950px;
+        }
+        .card .image {
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            padding: 3px;
+            background-color: blueviolet;
+            border: 1px solid red;
+        }
+
+        .card .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 20px;
+            background: #fff;
+            margin: 20px 0;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            background-color: blueviolet;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .card .name-profession {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .name-profession .name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .name-profession .profession {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .card .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .card .rating i {
+            font-size: 18px;
+            margin: 0 2px;
+            color: #ff5361;
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .button button {
+            background: #ff5361;
+            outline: none;
+            border: none;
+            color: #fff;
+            margin: 0 10px;
+            padding: 8px 22px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: #ff9361;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/host.png">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Someone Name</span>
+                            <span class="profession">web developer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="button">
+                            <button class="aboutme">aboutme</button>
+                            <button class="hireme">hireme</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/host.png">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Someone Name</span>
+                            <span class="profession">web developer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="button">
+                            <button class="aboutme">aboutme</button>
+                            <button class="hireme">hireme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
